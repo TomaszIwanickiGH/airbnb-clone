@@ -26,13 +26,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <body className={font.className}>
-        <ClientOnly>
-          <ToasterProvider />
-          <LoginModal />
-          <RegisterModal />
-          <RentModal />
-          <Navbar currentUser={currentUser} />
-        </ClientOnly>
+        <ToasterProvider />
+        <LoginModal />
+        <RegisterModal />
+        <RentModal />
+        <Navbar currentUser={currentUser} />
         <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>

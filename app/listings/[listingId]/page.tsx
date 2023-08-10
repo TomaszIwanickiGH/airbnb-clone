@@ -13,20 +13,14 @@ const ListingPage = async ({ params }: { params: IParams }) => {
   const currentUser = await getCurrentUser()
 
   if (!listing) {
-    return (
-      <ClientOnly>
-        <EmptyState />
-      </ClientOnly>
-    )
+    return <EmptyState />
   }
 
   return (
-    <ClientOnly>
-      <ListingClient
-        listing={listing}
-        currentUser={currentUser}
-      />
-    </ClientOnly>
+    <ListingClient
+      listing={listing}
+      currentUser={currentUser}
+    />
   )
 }
 
