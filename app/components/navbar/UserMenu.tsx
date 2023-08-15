@@ -63,6 +63,15 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                 <MenuItem
                   onClick={() => {
                     setIsOpen(false)
+                    router.push('/properties')
+                  }}
+                  label="Logged as "
+                  username={currentUser.name}
+                />
+                <hr />
+                <MenuItem
+                  onClick={() => {
+                    setIsOpen(false)
                     router.push('/trips')
                   }}
                   label="My trips"
