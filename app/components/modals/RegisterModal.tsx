@@ -59,7 +59,7 @@ const RegisterModal = () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Welcome to Airbnb"
+        title="Welcome"
         subtitle="Create an account!"
       />
       <Input
@@ -107,7 +107,7 @@ const RegisterModal = () => {
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="flex flex-row items-center justify-center gap-2">
-          <div>Already have an coount?</div>
+          <div>Already have an account?</div>
           <div
             onClick={toggle}
             className="text-neutral-800 cursor-pointer hover:underline"
